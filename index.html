@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektrikker Kalkulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Sett inn logo her -->
+            <h1>Elektrikker Kalkulator</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#ohms-lov">Ohms Lov</a></li>
+                <li><a href="#varmekabel">Varmekabel</a></li>
+                <li><a href="#kortslutning">Kortslutning</a></li>
+                <li><a href="#spenningsfall">Spenningsfall</a></li>
+                <li><a href="#kontinuitet">Kontinuitet</a></li>
+                <li><a href="#faseberegning">Faseberegning</a></li>
+            </ul>
+        </nav>
+        <div class="dark-mode-toggle">
+            <label class="switch">
+                <input type="checkbox" id="darkModeSwitch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <!-- Ohms Lov Kalkulator -->
+        <section id="ohms-lov">
+            <h2>Ohms Lov Kalkulator</h2>
+            <form id="ohmsForm">
+                <label for="spenning">Spenning (V):</label>
+                <input type="number" id="spenning" required>
+
+                <label for="effekt">Effekt (W):</label>
+                <input type="number" id="effekt" required>
+
+                <button type="submit">Beregn Strøm (A)</button>
+            </form>
+            <div id="ohmsResult"></div>
+        </section>
+
+        <!-- Flere kalkulator seksjoner kan legges til her -->
+    </main>
+
+    <footer>
+        <h3>Kontakt Informasjon</h3>
+        <p>Email: kontakt@elektrikkerkalkulator.no</p>
+        <p>Telefon: +47 123 45 678</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
